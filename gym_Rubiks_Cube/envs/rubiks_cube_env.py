@@ -51,7 +51,7 @@ class RubiksCubeEnv(gym.Env):
             reward = 1.0
             done = True
 
-        if self.step_count > 40 :
+        if self.step_count > 10000 :
             done = True
 
         return self.state, reward, done, others
